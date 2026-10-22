@@ -1,5 +1,11 @@
 package cl.demo.demo_spring.repository;
 
-public class LibroRepository {
-    
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import cl.demo.demo_spring.model.Libro;
+
+@Repository
+public interface LibroRepository extends JpaRepository<Libro, Long> {
+
 }
